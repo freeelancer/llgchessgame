@@ -1,7 +1,10 @@
 apps:
-        - script: './app.js'
-          exec-mode: 'fork'
-          name: 'lucid-chess-server-0'
-          env:
-                  PORT: 8050
-                  NODE_ENV: development
+  - script: "./app.js"
+    exec-mode: "fork"
+    name: "lucid-chess-server-0"
+    env:
+      PORT: 8050
+      NODE_ENV: development
+      APP_ENV: development
+      RPC: "https://bsc-mainnet.public.blastapi.io"
+      CONTRACT: "0x4691F60c894d3f16047824004420542E4674E621"
